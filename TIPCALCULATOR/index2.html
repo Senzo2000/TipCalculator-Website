@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index2.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="logo"><img src="logo.svg" alt=""></div>
+    <section>
+        <div class="tipsection">
+            <label for="bill">Bill</label>
+            <br>
+            <input type="number" class="input bill-input" id="bill-input">
+            <br>
+            <label for="">SELECT TIP %</label>
+            <div class="tip">
+                <div class="tips tip-5">5%</div>
+                <div class="tips tip-10">10%</div>
+                <div class="tips tip-15 active-tip">15%</div>
+                <div class="tips tip-25">25%</div>
+                <div class="tips tip-50">50%</div>
+                <div id="tipcustom"><input type="number" class="tipcustom" placeholder="CUSTOM"></div>
+            </div>
+            <div class="peoplelabel">
+                <label for="">Number of People</label>
+                <label for="" class="error">Cant be zerro</label>
+                <br>
+               
+            </div>
+            <input type="number" class="input people-input">
+        </div>
+
+
+        <div class="displaysection">
+            <div class="result">
+                <div class="tipamount">
+                    <div class="text">
+                        <p>Tip amount</p>
+                        <p class="person">/ Person</p>
+                    </div>
+                    <div class="amount" id="tipamount">$0</div>
+                </div>
+                <div class="total">
+                    <div class="text">
+                        <p>Total</p>
+                        <div class="person">/ Person</div>
+                    </div>
+                    <div class="amount" id="totalamount">$0</div>
+                </div>
+                <div class="reset">RESET</div>
+            </div>
+            
+           
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
